@@ -1,6 +1,7 @@
 package checkers.search;
 import checkers.core.Move;
 import checkers.core.MoveList;
+import checkers.evaluator.V7.EvaluatorV7;
 
 public class SearchTree {
 
@@ -12,6 +13,7 @@ public class SearchTree {
 		depth = d;
 		tree = new MoveList[depth];
 
+		
 	}
 
 	public void addMoves(MoveList moveList, int i){

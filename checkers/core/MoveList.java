@@ -1,7 +1,7 @@
 package checkers.core;
 import java.util.*;
 
-import checkers.evaluator.*;
+import checkers.evaluator.V7.*;
 
 /**
  * The Class holds a moveList for a particular square on the board

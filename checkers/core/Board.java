@@ -31,7 +31,7 @@ public class Board {
 	 * from saved board states, or from initial board states
 	 */
 	//where the initialisation is located
-	private final static String NEW_GAME_FILE = "data//checkers Input.txt";
+	private final static String NEW_GAME_FILE = "data//checkers_Input.txt";
 
 	//where save files are located
 	private final static String SAVE_GAME_DIR = "saveGames//";
@@ -499,6 +499,7 @@ public class Board {
 
 	public Move moveSelector(int pc){
 
+		System.out.println("Move Selector Called");
 		Move theMove = null;
 
 		Search minimax = new Search(searchDepth);

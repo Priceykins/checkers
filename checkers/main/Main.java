@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String [] args){
 
 		//ComplexGui cGui = new ComplexGui();
-		MainGui mGui = new MainGui();
+		ComplexGui cGui = new ComplexGui();
 	}
 
 }

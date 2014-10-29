@@ -1,19 +1,20 @@
 package checkers.search;
 import checkers.core.*;
-import checkers.evaluator.*;
+import checkers.evaluator.V8.*;
 
 
-public class Search {
+public class SearchV2 {
 
 	private static int depth = 0;
 	private static SearchTree tree;
 	private static int depthMod = 0;
+	private static Evaluator eval;
 
-	public Search(int d){
+	private SearchV2(){
 
-		tree = new SearchTree(d+8);
-		depth = d;
 	}
+	
+	public static void setTree(int d){depth = d; tree = new SearchTree(depth+8);}
 
 	public static Move minimax(Move move, int d, int player) {
 
@@ -23,7 +24,6 @@ public class Search {
 		moves.setAll(board.genMoveArray());
 
 		if (moves.getSize() == 0){
-			EvaluatorV7 eval = new EvaluatorV7();
 			//if there is no moves, return previous move after evaluation.
 			move.setEvalScore(eval.evFunc(move.getMoveBoard(), player));
 			return move;}
@@ -55,7 +55,6 @@ public class Search {
 		}
 		else{
 			//if node is a leaf node, evaluate
-			EvaluatorV7 eval = new EvaluatorV7();
 			move.setEvalScore(eval.evFunc(move.getMoveBoard(), player));
 			return move;
 		}

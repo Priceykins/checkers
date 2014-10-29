@@ -2,6 +2,7 @@ package checkers.gui;
 import javax.swing.*;
 
 import checkers.core.*;
+import checkers.evaluator.V7.EvaluatorV7;
 import checkers.gui.components.*;
 
 import java.awt.*;
@@ -75,7 +76,8 @@ public class ComplexGui extends JFrame implements ActionListener {
 		this.getContentPane().addHierarchyBoundsListener(new HierarchyBoundsListener(){
 
 			public void ancestorMoved(HierarchyEvent e) {
-				System.out.println(e);		}
+				//System.out.println(e);		
+				}
 
 			public void ancestorResized(HierarchyEvent e) {
 				calGraphicBoardArray();
@@ -603,6 +605,9 @@ public class ComplexGui extends JFrame implements ActionListener {
 		calGraphicPieceArray(theBoard.getBoard());
 		this.paintComponents(getGraphics());
 		this.repaint();
+		System.out.println("Number of evaluators created: " + EvaluatorV7.count);
+		EvaluatorV7.resetCount();
+		System.out.println("Evaluators reset to: " + EvaluatorV7.count);
 		playerMove();
 	}
 

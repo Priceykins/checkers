@@ -11,10 +11,10 @@ public class BoardUtils {
 
 
 	//where the initialisation is located
-	private final static String NEW_GAME_FILE = "data//checkers Input.txt";
+	private final static String NEW_GAME_FILE = "data/checkers_Input.txt";
 
 	//where save files are located
-	private final static String SAVE_GAME_DIR = "saveGames//";
+	private final static String SAVE_GAME_DIR = "saveGames/";
 
 	private final static String FILE_EXTENSION = ".txt";
 	

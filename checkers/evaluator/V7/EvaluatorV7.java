@@ -1,4 +1,4 @@
-package checkers.evaluator;
+package checkers.evaluator.V7;
 
 /**
  * The Class Evaluator.
@@ -7,6 +7,8 @@ package checkers.evaluator;
  */
 public class EvaluatorV7 {
 
+	public static int count = 0;
+	
 	private int [][] theBoard;
 
 	private int player;
@@ -14,6 +16,8 @@ public class EvaluatorV7 {
 	private int phase = 1;
 
 	public EvaluatorV7(){
+		
+		count = count + 1;
 	}
 
 	/**
@@ -207,5 +211,7 @@ public class EvaluatorV7 {
 
 		return score;
 	}
+	
+	public static void resetCount(){count = 0;}
 
 }
