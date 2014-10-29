@@ -1,0 +1,33 @@
+Checkers V9.8066.1 Help File
+
+Checkers was written by Chris Price
+
+1. Menu Options
+	
+	1.1 New Game
+		The new game option lets you start a new game. You must select the colour
+		you wish to play from the menu that pops up.
+	1.2 Save Game
+		The save game option lets you save a game to return to at a later time.
+		Just enter the name under which you wish to save the game and click ok.
+		Will automatically overwrite files of the same name.
+	1.3 Load Game
+		
+	1.4 Exit Game
+		Quits the checkers game. Be sure to save before you do this :D
+	1.5 Help
+		Shows this document
+
+2. Playing A Game
+	
+	2.1 Board Numbering
+		In checkers only 32 of the 64 squares are used. These are numbered from 1 to 32 as can
+		be seen in the top left of each "play" squares on the board in game. 
+	2.2 Play Direction
+		As the white side you will play up the board, while as black, down the board.
+	2.3 Selecting a move to make	
+		You select a move 
+		in the format of "Move Piece at 21 to 17" from the box on the bottom left of the window.
+		The two numbers show that this would be moving the piece from square 21 to square 17.
+	2.4 Procceeding with move
+		When you have selected the move you wish to make, press the make move button to procceed.
